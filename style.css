@@ -1,0 +1,171 @@
+/* Variables pour un changement facile des couleurs */
+:root {
+  --bg-color: #0d0d0d;
+  --card-bg: #1a1a1a;
+  --accent-color: #d4af37; /* Or */
+  --text-color: #f2f2f2;
+  --text-dim: #a6a6a6;
+}
+
+/* Base */
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(to bottom, #1a1a1a, #0d0d0d);
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #333, transparent);
+  margin: 20px 0;
+}
+
+/* Sections */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  padding: 60px 0;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--accent-color);
+}
+
+/* Présentation */
+#presentation p {
+  text-align: center;
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--text-dim);
+}
+
+/* Produits */
+#produits {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+article {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  text-align: center;
+}
+
+article:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-color);
+}
+
+article h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+article strong {
+  display: block;
+  font-size: 1.4rem;
+  margin-top: 15px;
+  color: var(--accent-color);
+}
+
+/* Formulaire de Contact */
+#contact {
+  background: var(--card-bg);
+  padding: 50px;
+  border-radius: 8px;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  background: #262626;
+  border: 1px solid #444;
+  color: white;
+  border-radius: 4px;
+  box-sizing: border-box; /* Évite les débordements */
+  margin-bottom: 20px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--accent-color);
+  color: black;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #b8962d;
+}
+
